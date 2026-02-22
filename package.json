@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "better-sqlite3": "^9.6.0",
+    "better-sqlite3": "^11.9.1",
     "express": "^4.19.0",
     "express-session": "^1.18.0",
     "multer": "^1.4.5-lts.1"
@@ -19,6 +19,6 @@
   },
   "license": "ISC",
   "engines": {
-    "node": ">=18"
+    "node": "22"
   }
 }
