@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register — Tinder</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <a href="/" class="logo" style="color:white;text-decoration:none;">🔥 Tinder</a>
+    </header>
+
+    <main class="page-center">
+        <div class="card-panel">
+            <h1>Join Tinder</h1>
+            <p class="subtitle">Create your account to start rating tinder and finding matches.</p>
+
+            <div id="error-msg" class="error-msg"></div>
+
+            <form id="register-form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Alex" required autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Profile Photo</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                    <img id="photo-preview" class="photo-preview" alt="Preview">
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn-primary">
+                    🔥 Create Account
+                </button>
+            </form>
+
+            <div class="divider">or</div>
+            <a href="/login.html" class="btn btn-secondary" style="text-decoration:none;display:flex;justify-content:center;">Already have an account? Sign In</a>
+        </div>
+    </main>
+
+    <script src="/js/auth.js"></script>
+</body>
+</html>

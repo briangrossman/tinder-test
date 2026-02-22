@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Matches — Tinder</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <span class="logo">🔥 Tinder</span>
+        <div class="user-info">
+            <img id="user-avatar" class="user-avatar" src="" alt="You">
+            <span id="user-name"></span>
+            <button id="logout-btn" class="btn-ghost">Sign Out</button>
+        </div>
+    </header>
+
+    <main class="matches-page">
+        <h2>🔥 Your Tinder Matches</h2>
+        <p id="matches-subtitle" class="subtitle">People ranked by how much you share the same taste in tinder.</p>
+
+        <!-- Warning if user hasn't rated all images -->
+        <div id="incomplete-warning" style="display:none; background:#FFF8E1; border:1px solid #FFD54F; border-radius:10px; padding:12px 16px; margin-bottom:16px; max-width:520px; width:100%; font-size:0.9rem; color:#795548;">
+            ⚠️ You haven't rated all tinder yet. <a href="/rate.html">Finish rating</a> to get more accurate matches!
+        </div>
+
+        <div id="match-list" class="match-list">
+            <div class="no-matches">Loading matches…</div>
+        </div>
+
+        <div class="matches-actions">
+            <a href="/rate.html" class="btn btn-primary" style="text-decoration:none;">← Rate Tinder</a>
+            <button id="rate-again-btn" class="btn btn-secondary">Rate Again</button>
+        </div>
+    </main>
+
+    <script src="/js/matches.js"></script>
+</body>
+</html>

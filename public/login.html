@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In — Tinder</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <a href="/" class="logo" style="color:white;text-decoration:none;">🔥 Tinder</a>
+    </header>
+
+    <main class="page-center">
+        <div class="card-panel">
+            <h1>Welcome Back</h1>
+            <p class="subtitle">Sign in with the name you registered with.</p>
+
+            <div id="error-msg" class="error-msg"></div>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Alex" required autocomplete="name">
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn-primary">
+                    🔓 Sign In
+                </button>
+            </form>
+
+            <div class="divider">or</div>
+            <a href="/register.html" class="btn btn-secondary" style="text-decoration:none;display:flex;justify-content:center;">Create a new account</a>
+        </div>
+    </main>
+
+    <script src="/js/auth.js"></script>
+</body>
+</html>

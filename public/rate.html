@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Tinder — Tinder</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <span class="logo">🔥 Tinder</span>
+        <div class="user-info">
+            <img id="user-avatar" class="user-avatar" src="" alt="You">
+            <span id="user-name"></span>
+            <button id="matches-btn" class="btn-ghost">Matches</button>
+            <button id="logout-btn" class="btn-ghost">Sign Out</button>
+        </div>
+    </header>
+
+    <main class="rate-page">
+        <!-- Progress bar -->
+        <div class="progress-section">
+            <div class="progress-label">
+                <span>Rate Tinder</span>
+                <span id="progress-text">0 / 8</span>
+            </div>
+            <div class="progress-bar-outer">
+                <div id="progress-bar" class="progress-bar-inner" style="width:0%"></div>
+            </div>
+        </div>
+
+        <!-- Swipe card area -->
+        <div id="card-container" class="card-container">
+            <div id="swipe-card" class="swipe-card">
+                <img id="tinder-img" src="" alt="Tinder image" draggable="false">
+                <div class="card-label like-label" id="like-label">LIKE 🔥</div>
+                <div class="card-label dislike-label" id="dislike-label">NOPE ✗</div>
+            </div>
+        </div>
+
+        <!-- Done state (hidden until all rated) -->
+        <div id="done-card" class="done-card">
+            <div class="done-icon">🎉</div>
+            <h2>You've rated all tinder!</h2>
+            <p>Time to see who you match with.</p>
+            <a href="/matches.html" class="btn btn-primary" style="text-decoration:none;margin-top:8px;">See My Matches →</a>
+            <button id="rate-again-btn" class="btn btn-secondary" style="margin-top:8px;">Rate Again</button>
+        </div>
+
+        <!-- Action buttons -->
+        <div id="action-buttons" class="action-buttons">
+            <button class="btn-action btn-dislike" id="btn-dislike" title="Dislike">✗</button>
+            <button class="btn-action btn-like"    id="btn-like"    title="Like">🔥</button>
+        </div>
+    </main>
+
+    <script src="/js/rate.js"></script>
+</body>
+</html>

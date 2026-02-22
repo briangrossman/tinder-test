@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder — Find Your Flame</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <span class="logo">🔥 Tinder</span>
+    </header>
+
+    <main class="page-center">
+        <div class="index-hero">
+            <div class="hero-icon">🪵🔥</div>
+            <h1>Tinder</h1>
+            <p class="tagline">Find people who light your fire.<br>Rate tinder photos and discover your matches.</p>
+            <div class="index-buttons">
+                <a href="/register.html" class="btn btn-primary" style="text-decoration:none;">✨ Create Account</a>
+                <a href="/login.html" class="btn btn-secondary" style="text-decoration:none;">🔓 Sign In</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // If already logged in, go straight to rate page
+        fetch('/me').then(r => {
+            if (r.ok) window.location.href = '/rate.html';
+        }).catch(() => {});
+    </script>
+</body>
+</html>
