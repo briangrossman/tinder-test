@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 3000;
 // ── Static files ─────────────────────────────────────────────────────────────
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use('/images',  express.static(path.join(__dirname, '..', 'images')));
-app.use('/uploads', express.static(path.join(__dirname, '..', 'uploads')));
+app.use('/uploads', express.static(process.env.UPLOADS_DIR || path.join(__dirname, '..', 'uploads')));
 
 // ── Body parsing ──────────────────────────────────────────────────────────────
 app.use(express.json());
